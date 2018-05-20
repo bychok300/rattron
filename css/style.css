@@ -1,0 +1,83 @@
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  min-width: 99%;
+  min-height: 100%;
+}
+
+.body-wrapper{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+  align-items: center;
+  height: 100%;
+}
+
+.container{
+  display: flex;
+
+}
+.user-panel-link{
+  border-radius: 3px 3px 3px 3px;
+  /* height: 40px; */
+  margin-top: 30%;
+  /* padding-top: 10px; */
+  align-items: center;
+  flex-flow: column;
+  /* border: 1px solid; */
+  /* border-color: white; */
+  /* padding-top: 2.3%; */
+
+}
+
+.user-panel-link a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.user-panel-link a:hover{
+  text-decoration: underline;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+p {
+padding-left: 10%;
+padding-right: 10%;
+
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}

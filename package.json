@@ -1,0 +1,52 @@
+{
+  "name": "logMe",
+  "version": "1.0.0",
+  "description": "Simple logger",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "babel": "babel"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "electron": "^1.8.4"
+  },
+  "iohook": {
+    "targets": [
+      "node-57",
+      "electron-57"
+    ],
+    "platforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ],
+    "arches": [
+      "x64",
+      "ia32"
+    ]
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "dropbox": "^4.0.4",
+    "iohook": "^0.1.16",
+    "isomorphic-fetch": "^2.2.1",
+    "jquery": "^3.3.1",
+    "latest-tweets": "^1.0.3",
+    "node-cipher": "^6.3.2",
+    "nodemailer": "^4.6.4",
+    "pcap": "git+https://github.com/mranney/node_pcap.git",
+    "twitter": "^1.7.1"
+  }
+}

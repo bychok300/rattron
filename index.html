@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script href="js/typed.js"></script>
+    <title>GSO</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/mattboldt/typed.js/master/lib/typed.min.js"></script>
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <script>
+            // You can also require other files to run in this process
+            //require('./renderer.js')
+        </script>
+        <div class="container">
+            <span class="write"></span>
+        </div>
+        <div class="user-panel-link">
+            <a href="user_panel.html">Open local storage</a>
+        </div>
+
+        <script>
+            var typed2 = new Typed('.write', {
+                strings: ['Welcome back, Agent.', 'GSO'],
+                startDelay: 500,
+                typeSpeed: 100,
+                backSpeed: 50,
+                cursorChar: '_',
+                shuffle: true,
+                smartBackspace: false,
+                loop: false
+            });
+        </script>
+        <script>
+            var myButton = document.getElementsByClassName('user-panel-link')[0];
+
+            myButton.style.display = 'none';
+
+            setTimeout(function() {
+                myButton.style.display = 'inline';
+
+            }, 8000);
+        </script>
+    </div>
+</body>
+
+</html>

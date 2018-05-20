@@ -1,0 +1,7 @@
+docs
+test
+
+.editorconfig
+.jscsrc
+.jshintrc
+.travis.yml

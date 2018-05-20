@@ -1,0 +1,1 @@
+cmd_Release/obj.target/pcap_binding.node := g++ -shared -pthread -rdynamic -m64  -Wl,-soname=pcap_binding.node -o Release/obj.target/pcap_binding.node -Wl,--start-group Release/obj.target/pcap_binding/pcap_binding.o Release/obj.target/pcap_binding/pcap_session.o -Wl,--end-group -lpcap
