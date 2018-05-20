@@ -40,6 +40,6 @@ If you want use it just copy this code and replace code in main.js
 #### notice that loggerNtcpHandler.js does't contains functions for sending created files to attacker
 
 this is it :^) Virus total test doesn't recognize any malware or trojan or somthing bad. It tool fully unvisible for antivirus
-feel free to ask your quiestions, create pull requests, and do whatever you want)
+feel free to ask your quiestions, contribute to project and do whatever you want)
 
 if you like this app you may donate me. bitcoin: 17jJDW8z9KVsueY4P7g33jrJhZbD9GxsBY
