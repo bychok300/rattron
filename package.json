@@ -1,7 +1,7 @@
 {
-  "name": "logMe",
+  "name": "Rattron",
   "version": "1.0.0",
-  "description": "Simple logger",
+  "description": "Simple remote access tool example",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -10,12 +10,10 @@
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "remote",
+    "access"
   ],
-  "author": "GitHub",
+  "author": "bychok300",
   "license": "CC0-1.0",
   "devDependencies": {
     "babel-preset-env": "^1.6.1",
